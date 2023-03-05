@@ -11,8 +11,6 @@ app.get('/', function (req, res) {
   if (today.getDay() == 1 || today.getDay() == 0) {
     res.sendFile(__dirname + '/index.html');
   }
-  else
-    res.send("oops working day");
 });
 
 app.listen(3000, function () {
